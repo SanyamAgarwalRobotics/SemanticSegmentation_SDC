@@ -40,6 +40,10 @@ Used cross-entropy loss and l2 regularization loss with an Adam optimizer as per
 
 I could have lower the learning rate from 0.0001 to 0.00001 for even slower but more precise learning with more epochs > 50 but I think with 0.021 loss within epoch 50 is reasonable to segment the images between road or not road and was done pretty nicely.
 
+I have added couple of Semantic Segmentation model Output images here [Semantic Model Output](https://github.com/SanyamAgarwalRobotics/SemanticSegmentation_SDC/tree/master/runs/1550686221.1727343)
+
+ALl images could not be uploaded due to bandwidth issues.
+
 ### Setup
 ##### GPU
 `main.py` will check to make sure you are using GPU - if you don't have a GPU on your system, you can use AWS or another cloud computing platform.
