@@ -16,6 +16,21 @@ A fully convolutional version of VGG16 (ENCODER), which already contains the 1x1
 - skip layer created using the above 2 layers
 - Deconvolution layer created for 8x upsampling using 16x16 kernel and stride 8 from the last skip layer created
 
+### Optimize
+Used cross-entropy loss and l2 regularization loss with an Adam optimizer as per suggesstion from Udacity class session.
+
+### Training
+#### Hyperparameters
+- learning rate: 0.0001
+- keep prob: 0.5 during training.
+- Epochs: 50
+- Batch size: 5
+- L2 regularization at a scale of 1e-3
+
+ The loss values are printed while training network and seems to be decresing in value gradually
+ 
+### Sample Classified Images
+![png](./images/um_000004.png)
 ### Setup
 ##### GPU
 `main.py` will check to make sure you are using GPU - if you don't have a GPU on your system, you can use AWS or another cloud computing platform.
