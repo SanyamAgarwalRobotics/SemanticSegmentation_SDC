@@ -1,6 +1,20 @@
 # Semantic Segmentation
 ### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+Goal of this project, is to label the pixels of a road in images using a Fully Convolutional Network (FCN) for Semantic Segmentatin based on a VGG16 (encoder and decoder).
+
+
+### Architecture
+A fully convolutional version of VGG16 (ENCODER), which already contains the 1x1 convolutions to replace the fully connected layers in order to preserve the spatial information.
+
+### Decoder implementation FCN8
+- Convolution layer created using 1x1 kernel and layer 7 extracted from VGG16.
+- Deconvolution layer created for 2x upsampling using 4x4 kernel and stride 2 from previous convolution layer.
+- Convolution layer created using 1x1 kernel and layer 4 extracted from VGG16.
+- Skip layer created performing elment-wise matrix addition between Deconvolution layer mentioned above and 1X1 conv layer from    layer 4.
+- Deconvolution layer created for 2x upsampling using 4x4 kernel and stride 2 from previous skip layer.
+- Convolution layer created using 1x1 kernel and layer 3 extracted from VGG16.
+- skip layer created using the above 2 layers
+- Deconvolution layer created for 8x upsampling using 16x16 kernel and stride 8 from the last skip layer created
 
 ### Setup
 ##### GPU
