@@ -34,9 +34,9 @@ Used cross-entropy loss and l2 regularization loss with an Adam optimizer as per
 ![png](./images/um_000005.png)
 ![png](./images/um_000006.png)
 ![png](./images/um_000007.png)
-![png](./images/um_000095.png)
-![png](./images/um_000098.png)
-![png](./images/um_000099.png)
+![png](./images/uu_000095.png)
+![png](./images/uu_000098.png)
+![png](./images/uu_000099.png)
 
 I could have lower the learning rate from 0.0001 to 0.00001 for even slower but more precise learning with more epochs > 50 but I think with 0.021 loss within epoch 50 is reasonable to segment the images between road or not road and was done pretty nicely.
 
